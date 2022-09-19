@@ -7,8 +7,9 @@ import { ChangeNamePipe } from './pipes/change-name.pipe';
 import { DirectiveSearchDirective } from './directives/directive-search.directive';
 import { IndexTablePipe } from './pipes/index-table.pipe';
 import { ClassificationChemicalElementPipe } from './pipes/classification-chemical-element.pipe';
+import { UppercaseTextDirective } from './directives/uppercase-text.directive';
 
-const COMPONENTS = [FooterComponent,HeaderComponent,ChangeNamePipe,IndexTablePipe,DirectiveSearchDirective,IndexTablePipe, ClassificationChemicalElementPipe]
+const COMPONENTS = [FooterComponent,HeaderComponent,ChangeNamePipe,IndexTablePipe,DirectiveSearchDirective,IndexTablePipe, ClassificationChemicalElementPipe, UppercaseTextDirective]
 
 @NgModule({
   declarations: [...COMPONENTS],
