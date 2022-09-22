@@ -7,12 +7,12 @@ import { ChangeNamePipe } from './pipes/change-name.pipe';
 import { DirectiveSearchDirective } from './directives/directive-search.directive';
 import { IndexTablePipe } from './pipes/index-table.pipe';
 import { OrderByWeightPipe } from './pipes/order-by-weight.pipe';
-import { IlumineColumnOnHoverDirective } from './directives/ilumine-column-on-hover.directive';
+import { IlumineRowOnHoverDirective } from './directives/ilumine-row-on-hover.directive';
 
-const COMPONENTS = [FooterComponent,HeaderComponent,ChangeNamePipe,IndexTablePipe,DirectiveSearchDirective,IndexTablePipe, OrderByWeightPipe, IlumineColumnOnHoverDirective];
+const COMPONENTS = [FooterComponent,HeaderComponent,ChangeNamePipe,IndexTablePipe,DirectiveSearchDirective,IndexTablePipe, OrderByWeightPipe, IlumineRowOnHoverDirective];
 
 @NgModule({
-  declarations: [...COMPONENTS, OrderByWeightPipe, IlumineColumnOnHoverDirective],
+  declarations: [...COMPONENTS, OrderByWeightPipe, IlumineRowOnHoverDirective],
   imports: [
     CommonModule,
     MaterialModule

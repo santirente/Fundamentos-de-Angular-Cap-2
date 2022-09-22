@@ -1,13 +1,11 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appIlumineColumnOnHover]'
+  selector: '[appIlumineRowOnHover]'
 })
-export class IlumineColumnOnHoverDirective {
+export class IlumineRowOnHoverDirective {
 
-  constructor(private element: ElementRef) {
-    
-  }
+  constructor(private element: ElementRef) { }
   @HostListener('mouseenter', ['$event']) mouseover(event: object): void {
     const e = <KeyboardEvent>event;
     this.element.nativeElement.style.backgroundColor = 'red';
@@ -18,5 +16,4 @@ export class IlumineColumnOnHoverDirective {
     this.element.nativeElement.style.backgroundColor = 'white';
     console.log(this.element)
   }
-
 }
